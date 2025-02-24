@@ -7,3 +7,6 @@ Route::get('/', fn() => to_route('jobs.index'));
 
 Route::resource('jobs', JobController::class)
     ->only('index', 'show');
+
+Route::resource('icons', JobController::class)
+    ->only('index', 'show');
